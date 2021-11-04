@@ -1,0 +1,292 @@
+body{
+    font-family: 'Bitter', serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    max-width: 100%;
+}
+
+.hero{
+    background-color: #202124;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 95vh;
+    padding-left: 10vw;
+    padding-right: 5vw;
+}
+
+.divider{
+    height: 15vh;
+}
+
+.career{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding-left: 10vw;
+    padding-right: 5vw;
+}
+
+.work_history{
+    background-color: #202124;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 5vw;
+    padding-right: 10vw;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    padding-left: 10vw;
+    padding-right: 5vw; */
+}
+
+
+h1.primary{
+    color:white;
+    line-height: 70px;
+    margin: 0;
+    font-size: 70px;
+}
+
+h2.primary{
+    color:white;
+    line-height: 40px;
+    margin: 0;
+    font-size: 40px;
+}
+
+h1.primary_alt{
+    color:#202124;
+    line-height: 70px;
+    margin: 0;
+    font-size: 70px;
+}
+
+h2.primary_alt{
+    color:#202124;
+    line-height: 40px;
+    margin: 0;
+    font-size: 40px;
+}
+
+h3.primary_alt{
+    color:#202124;
+    font-weight: normal;
+}
+
+.primary{
+    color: #b7ff00;
+    font-weight: bold;
+}
+
+.pres_message{
+    order: 1;
+    align-self: center;
+}
+
+.about_content{
+    order: 1;
+    width: 40vw;
+    align-self: center;
+    flex-grow:1;
+}
+
+.work_history_text{
+    order: 2;
+    width: 10vw;
+    align-self: center;
+    flex-grow:1;
+}
+
+.work_history_travel_container{
+    order: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow:1;
+}
+
+.cards_container{
+    order: 2;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow:1;
+}
+
+.technology_cards1{
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.technology_cards2{
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 5px solid #202124;
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+}
+
+.history_cards_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow:1;
+    width: 100%;
+}
+
+.history_cards_container .card{
+    border: 5px solid white;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: all 300ms ease-out 100ms;
+}
+
+.history_cards_container .card:hover{
+    border: 5px solid #b7ff00;
+    width: 90%;
+}
+
+
+
+.card_content_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.card_content_container h3{
+    border-bottom: 5px solid #b7ff00;
+}
+
+.card .card_image_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card_image_container img{
+    width: inherit;
+    height: inherit;
+}
+
+.pep_svg{
+    position: absolute;
+    right: 10vw;
+    width: 40vw;
+    bottom: -10vw;
+}
+
+.pep_svg img{
+    width: 100%;
+     transform:
+        rotate(-15deg);
+}
+
+.social_contact{
+    order: 3;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.social_contact i{
+    color: white; 
+    font-size: 40px; 
+    padding-bottom: 10px;
+}
+
+/* PHONE VERSION */
+@media only screen and (max-width: 768px) {
+    .social_contact{
+        display: none;
+    }
+
+    .pep_svg{
+        right: 10vw;
+        width: 55vw;
+        bottom: -15vw;
+    }
+    
+    .hero{
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .pres_message{
+        align-self: center;
+    }
+
+    .career{
+        padding-left: 2vh;
+        padding-right: 2vh;
+        justify-content: center;
+        height: max-content;
+    }
+
+    .card{
+        width: 300px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .work_history{
+        height: max-content;
+        flex-direction: row;
+    }
+
+    .career{
+        padding-left: 2vh;
+        padding-right: 2vh;
+        justify-content: center;
+        height: max-content;
+    }
+
+    .work_history_text{
+        margin: 4vh;
+        text-align: center;
+        order: 1;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .work_history_text h1{
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 610px) {
+    .pres_message{
+        padding-left: 4vw;
+    }
+}
