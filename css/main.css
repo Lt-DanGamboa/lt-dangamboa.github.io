@@ -40,7 +40,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 5vw;
-    padding-right: 10vw;
+    padding-right: 5vw;
     /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -88,6 +88,44 @@ h3.primary_alt{
     font-weight: bold;
 }
 
+.secondary{
+    color: white;
+    font-weight: normal;
+}
+
+.history_datetime{
+    position: relative;
+}
+
+.history_datetime h3{
+    font-weight: bold;
+}
+
+.history_datetime span{
+    color: #b7ff00;
+}
+
+.job_title{
+    display: none;
+    text-align: center;
+}
+
+.card:hover .job_title{
+    display: block;
+}
+
+.card:hover .history_datetime{
+    display: none;
+}
+
+.right{
+    left: 250px;
+}
+
+.left{
+    right: 250px;
+}
+
 .pres_message{
     order: 1;
     align-self: center;
@@ -102,9 +140,11 @@ h3.primary_alt{
 
 .work_history_text{
     order: 2;
-    width: 10vw;
+    width: 0vw;
     align-self: center;
     flex-grow:1;
+    margin-left: 10vw;
+    padding: 20px;
 }
 
 .work_history_travel_container{
@@ -115,6 +155,7 @@ h3.primary_alt{
     justify-content: space-around;
     flex-wrap: wrap;
     flex-grow:1;
+    width: 10vw;
 }
 
 .cards_container{
@@ -169,7 +210,25 @@ h3.primary_alt{
     width: 90%;
 }
 
+.job_title h2{
+    margin-top: 1vh;
+}
 
+.job_image{
+    width: 180px;
+    height: 180px;
+}
+
+.job_image img{
+    width: inherit;
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+}
+
+.card:hover .job_image{
+    display: none;
+}
 
 .card_content_container{
     display: flex;
@@ -255,9 +314,18 @@ h3.primary_alt{
         width: 300px;
         margin-left: 0;
     }
+
+    .history_cards_container .card{
+        margin-top: 5vh;
+    }
+
+    .history_cards_container .card:hover{
+        border: 5px solid #b7ff00;
+        height: 50vh;
+    }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1024px) {
 
     .work_history{
         height: max-content;
@@ -281,6 +349,16 @@ h3.primary_alt{
 
     .work_history_text h1{
         font-size: 50px;
+    }
+
+    .left{
+        bottom: 50px;
+        right: 0px;
+    }
+
+    .right{
+        bottom: 50px;
+        left: 0px;
     }
 
 }
