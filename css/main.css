@@ -45,6 +45,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 100vh;
+    min-height: 950px;
     padding-left: 10vw;
     padding-right: 5vw;
 }
@@ -52,6 +53,7 @@ body::-webkit-scrollbar-thumb {
 .work_history{
     background-color: #202124;
     height: 100vh;
+    min-height: 950px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
