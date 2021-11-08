@@ -14,12 +14,12 @@ body::-webkit-scrollbar-thumb {
   background-color: #b7ff00;
 }
 
-.card::-webkit-scrollbar {
+.history_info_container::-webkit-scrollbar {
     width: 5px;
 }
 
-.card::-webkit-scrollbar-thumb {
-  background-color: #b7ff00;
+.history_info_container::-webkit-scrollbar-thumb {
+  background-color: #696969;
 }
 
 .main{
@@ -53,7 +53,6 @@ body::-webkit-scrollbar-thumb {
 .work_history{
     background-color: #202124;
     height: 100vh;
-    min-height: 950px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -161,9 +160,35 @@ h3.primary_alt{
     width: 0vw;
     align-self: center;
     flex-grow:1;
-    margin-left: 10vw;
     padding: 20px;
 }
+
+.history_info_container{
+    order: 1;
+    background-color: white;
+    width: 25vw;
+    height: 85vh;
+    align-self: end;
+    border-bottom: none;
+    padding-left: 4vh;
+    color:#202124;
+    overflow-y: scroll;
+    flex-grow:1;
+}
+
+.record_info{
+    padding-left: 2vw;
+    padding-right: 10vw;
+}
+
+.record_info p{
+    font-weight: 500;
+}
+
+.record_title{
+    width: fit-content;
+}
+
 
 .work_history_travel_container{
     order: 1;
@@ -362,13 +387,15 @@ h3.primary_alt{
     .history_cards_container .card:hover{
         height: 50vh;
     }
+
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1265px) {
 
     .work_history{
         height: max-content;
         flex-direction: row;
+        padding: 0;
     }
 
     .career{
@@ -382,8 +409,16 @@ h3.primary_alt{
         margin: 4vh;
         text-align: center;
         order: 1;
-        width: 100%;
+        width: max-content;
         flex-grow: 1;
+    }
+
+    .history_info_container{
+        order: 2;
+        width: 50vw;
+        padding-top: 0px;
+        margin-left: 2vh;
+        margin-right: 2vh;
     }
 
     .work_history_text h1{
