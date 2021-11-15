@@ -50,6 +50,24 @@ body::-webkit-scrollbar-thumb {
     padding-right: 5vw;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 950px;
+    padding-left: 10vw;
+    padding-right: 8vw;
+    justify-content: center;
+}
+
+.contact_message{
+    text-align: center;
+}
+
+.contact .card{
+    width: 100%;
+}
+
 .work_history{
     background-color: #202124;
     height: 100vh;
@@ -168,12 +186,12 @@ h3.primary_alt{
     background-color: white;
     width: 25vw;
     height: 85vh;
-    align-self: end;
     border-bottom: none;
     padding-left: 4vh;
     color:#202124;
     overflow-y: scroll;
     flex-grow:1;
+    align-self: center;
 }
 
 .record_info{
@@ -339,10 +357,23 @@ h3.primary_alt{
     flex-direction: column;
 }
 
-.social_contact i{
+.social_contact a{
     color: white; 
     font-size: 40px; 
     padding-bottom: 10px;
+}
+
+.contact_links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+.contact_links a{
+    color: #202124; 
+    font-size: 80px; 
+    border-bottom: 5px solid #b7ff00;
 }
 
 /* PHONE VERSION */
@@ -388,6 +419,11 @@ h3.primary_alt{
         height: 50vh;
     }
 
+    .contact_links a{
+        font-size: 50px; 
+    }
+
+
 }
 
 @media only screen and (max-width: 1265px) {
@@ -417,8 +453,10 @@ h3.primary_alt{
         order: 2;
         width: 50vw;
         padding-top: 0px;
+        padding-bottom: 10px;
         margin-left: 2vh;
         margin-right: 2vh;
+        margin-bottom: 40px;
     }
 
     .work_history_text h1{
