@@ -192,7 +192,7 @@ h3.primary_alt{
     overflow-y: scroll;
     flex-grow:1;
     align-self: center;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .record_info{
